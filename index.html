@@ -11,9 +11,35 @@
 
 
 <div id="obj">
-    <input type="text" v-on:input="changeTitle" />
+
+
+    <input type="text" v-on:input="changeTitle"/>
     <p>
-        {{noidung}}
+        <!--sử dụng v-bind để báo cho html biết là attribute của thẻ a này sẽ sử dụng được các thuộc tính của VueJS từ đó mới gán link dc còn nếu để kiểu <a href="{{ link }}">Google</a> nó sẽ không chạy-->
+        {{noidung}} - <a v-bind:href="link">Google</a>
+    </p>
+    <h1 v-once>{{noidung}}</h1>
+    <p> Return từ 1 function
+        {{sayHello()}}
+    </p>
+
+    <p> Return từ nội this.noidung
+        {{sayHelloReturnFromNoiDung()}}
+    </p>
+
+    <p> {{ finishedLink }}</p>
+
+    <p v-html="finishedLink"></p>
+
+    <div>
+        <input type="button" value="Click Me" v-on:click="increase">
+        <p>{{counter}}</p>
+    </div>
+    <p v-on:mousemove="updateCoordinates">
+        Vị trí con trỏ chuột: {{x}} / {{y}}
+        <!-- - <span v-on:mousemove="dummy">DEAD SPOT</span>  &lt;!&ndash;Ngưng tính toàn khi vào vùng DEAD SPOT cách 1 &ndash;&gt;-->
+        - <span v-on:mousemove.stop>DEAD SPOT</span>  <!--Ngưng tính toàn khi vào vùng DEAD SPOT cách 2 -->
+
     </p>
 </div>
 
