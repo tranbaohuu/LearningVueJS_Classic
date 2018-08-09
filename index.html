@@ -14,10 +14,13 @@
 
 
     <input type="text" v-on:input="changeTitle"/>
+
+
     <p>
         <!--sử dụng v-bind để báo cho html biết là attribute của thẻ a này sẽ sử dụng được các thuộc tính của VueJS từ đó mới gán link dc còn nếu để kiểu <a href="{{ link }}">Google</a> nó sẽ không chạy-->
         {{noidung}} - <a v-bind:href="link">Google</a>
     </p>
+    <!--render 1 lan voi v-once lan 2 khi thay doi du lieu se ko con duoc nua-->
     <h1 v-once>{{noidung}}</h1>
     <p> Return từ 1 function
         {{sayHello()}}
@@ -33,6 +36,7 @@
 
     <div>
         <input type="button" value="Click Me" v-on:click="increase">
+        <input type="button" value="Cộng trước và nhân 2 sau" v-on:click="counter++">
         <p>{{counter}}</p>
     </div>
     <p v-on:mousemove="updateCoordinates">
@@ -41,6 +45,29 @@
         - <span v-on:mousemove.stop>DEAD SPOT</span>  <!--Ngưng tính toàn khi vào vùng DEAD SPOT cách 2 -->
 
     </p>
+    <div>
+        <!--gán key up cho 2 nút enter và space thôi mới xảy ra event-->
+        <input type="text" v-on:keyup.enter.space="keyupevent">
+    </div>
+
+
+    <div>
+        <!--2 ways binding-->
+        <h1>2 ways binding</h1>
+        <input type="text" v-model="twowaysbinding"/>
+        <p>{{twowaysbinding}}</p>
+    </div>
+
+    <div>
+        <h1>Biến Computed giúp cho hệ thống cache lại cac giá trị tính toán phức tạp, và nó chỉ thay đổi và nạp lại khi
+            giá trị ban đầu bị thay đổi,
+            khi dùng phương thức nào qua phức tạp để tránh gọi đi gọi lại hãy dùng computed. ví dụ khi click Increase nếu làm method thì phải tính toán đến 5 lần mới thay đổi
+        sang Greater than 5. Nhưng với computed thì khi counter = 6 thì nó mới nạp lại để tránh việc tốn tài nguyên chạy 5 lần, thay vào đó là 1</h1>
+        <input type="button" value="Click Me" v-on:click="increase">
+        <input type="button" value="Cộng trước và nhân 2 sau" v-on:click="counter--">
+        <p>{{counter}}</p>
+        <p>Result: {{output}}</p>
+    </div>
 </div>
 
 

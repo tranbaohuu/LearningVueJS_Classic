@@ -7,7 +7,8 @@ new Vue({
         finishedLink: '<a href="https://www.vnexpress.net">VNExpress</a>',
         counter: 0,
         x: 0,
-        y: 0
+        y: 0,
+        twowaysbinding: ""
 
     },
     methods: {
@@ -36,6 +37,28 @@ new Vue({
         dummy: function (event) {
             //ngưng tính toán khi vào hàm này
             event.stopPropagation();
+        },
+        keyupevent: function () {
+            alert('haha alert');
+        }
+    },
+    computed: {
+        output: function () {
+            return this.counter > 5 ? 'Greater 5' : 'Smaller than 5';
+        }
+    },
+    watch: {
+        counter: function (value) {
+            //trong hàm callback lại như dàng hàm setTimeout phải khai báo 1 biến để chứa this chứ ko sẽ không chạy được.
+            //Như kiểu hàm callback chạy đa luồng nên cần pải có 1 biến khác để chạy thay vì dùng this chạy từ luồng chính
+            //Asynchronous Task
+            var vm = this;
+            // this.counter = 0;
+            setTimeout(function () {
+                //hàm canh chừng biến data có gì thay đổi sẽ thực thi hành động trong đây.
+                //Na ná trigger trong sql
+                vm.counter = 0;
+            }, 3000)
         }
     }
 });
