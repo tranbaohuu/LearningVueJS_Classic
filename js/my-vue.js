@@ -8,7 +8,9 @@ new Vue({
         counter: 0,
         x: 0,
         y: 0,
-        twowaysbinding: ""
+        twowaysbinding: "",
+        attachRed: false,
+        attachGreen: false
 
     },
     methods: {
@@ -45,6 +47,12 @@ new Vue({
     computed: {
         output: function () {
             return this.counter > 5 ? 'Greater 5' : 'Smaller than 5';
+        },
+        divClasses: function () {
+            return {
+                red: this.attachRed,
+                blue: !this.attachRed
+            };
         }
     },
     watch: {

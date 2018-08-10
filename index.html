@@ -6,6 +6,7 @@
 
     <script src="js/vue.js"></script>
 
+    <link rel="stylesheet" href="style/mystyle.css">
 </head>
 <body>
 
@@ -61,12 +62,33 @@
     <div>
         <h1>Biến Computed giúp cho hệ thống cache lại cac giá trị tính toán phức tạp, và nó chỉ thay đổi và nạp lại khi
             giá trị ban đầu bị thay đổi,
-            khi dùng phương thức nào qua phức tạp để tránh gọi đi gọi lại hãy dùng computed. ví dụ khi click Increase nếu làm method thì phải tính toán đến 5 lần mới thay đổi
-        sang Greater than 5. Nhưng với computed thì khi counter = 6 thì nó mới nạp lại để tránh việc tốn tài nguyên chạy 5 lần, thay vào đó là 1</h1>
+            khi dùng phương thức nào qua phức tạp để tránh gọi đi gọi lại hãy dùng computed. ví dụ khi click Increase
+            nếu làm method thì phải tính toán đến 5 lần mới thay đổi
+            sang Greater than 5. Nhưng với computed thì khi counter = 6 thì nó mới nạp lại để tránh việc tốn tài nguyên
+            chạy 5 lần, thay vào đó là 1</h1>
         <input type="button" value="Click Me" v-on:click="increase">
         <input type="button" value="Cộng trước và nhân 2 sau" v-on:click="counter--">
         <p>{{counter}}</p>
         <p>Result: {{output}}</p>
+    </div>
+
+
+    <div>
+
+        <h1>Demo chạy CSS bằng VueJS click trên khu vực bặt/tắt màu, red là truyền css vào và gán với attachRed, nếu
+            true thì màu đỏ và false thì màu đen</h1>
+        <div class="demo" v-on:click="attachRed = !attachRed" v-bind:class="{red: attachRed}"></div>
+        <div class="demo" v-on:click="attachRed = !attachRed" v-bind:class="{red: attachRed}"></div>
+        <div class="demo" v-on:click="attachGreen = !attachGreen" v-bind:class="{green: attachGreen}"></div>
+    </div>
+
+
+    <div>
+        <!--Cách gọi bằng computed rút ngắn hơn cách trên, có thể thấy file js có thể gọi xuyên qua CSS-->
+        <h1>Cách gọi bằng computed rút ngắn hơn cách trên, có thể thấy file js có thể gọi xuyên qua CSS</h1>
+        <div class="demo" v-on:click="attachRed = !attachRed" v-bind:class="divClasses"></div>
+        <div class="demo" v-on:click="attachRed = !attachRed" v-bind:class="divClasses"></div>
+        <div class="demo" v-on:click="attachGreen = !attachGreen" v-bind:class="{green: attachGreen}"></div>
     </div>
 </div>
 
