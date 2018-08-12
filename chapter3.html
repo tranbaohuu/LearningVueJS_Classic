@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương 3</title>
+    <script src="js/vue.js"></script>
+    <link rel="stylesheet" href="style/mystyle.css">
+</head>
+<body>
+
+<div id="obj">
+    <div>
+        <h1>Đây là chương 3 </h1>
+        <!--v-if thực chất sẽ xóa luôn element trên html đi chứ không đon thuần là hide/show. Và xóa luôn các element con bên trong-->
+        <p v-if="show">You can see me!</p>
+        <p v-else="show">Do you also see me?</p>
+        <!--V-show khắc v-if là nó chỉ display:none hoặc block hiển thị thôi chứ ko detach ra khỏi html trong html-->
+        <p v-show="show">Kiểm tra v-show</p>
+
+        <!--dùng template để group toàn bộ element ở bên trong nếu bạn không muốn xài div. Template ko hiện thị tên thẻ trong HTML khi F12-->
+        <template v-if="show">
+            <h1>Heading</h1>
+            <p>Inside a template</p>
+        </template>
+
+        <button @click="show = !show">switch</button>
+    </div>
+
+
+    <div>
+        <h1>Mảng phần tử thông thường</h1>
+        <ul>
+            <!--Sử dụng :key="ingredient" để set unique key cho mảng là 1à một mẹo giúp tránh việc cập nhật hay xóa phần tử trong máng khiến nó báo lỗi vị trí index của phần tử-->
+            <li v-for="(ingredient,i) in ingredients" :key="ingredient">{{ ingredient }}({{i}})</li>
+        </ul>
+        <button @click="ingredients.push('spices')">Add New</button>
+
+        <h1>Mảng phần tử đối tượng</h1>
+        <ul>
+            <li v-for="person in persons">
+                <p>{{ person.name }}</p>
+                <p>{{ person.age }}</p>
+                <p>{{ person.color }}</p>
+                <!--Cú pháp lấy ra value, key, index ở tróng object , lưu ý vị trí phải đặt đúng 1st, 2nd , 3rd-->
+                <p v-for="(value,key, index) in person">Lấy ra key và value => Value: {{value}} -- Key: {{ key }} --
+                    Index: {{index}}</p>
+                <p>Hiển thị nguyên đối tượng: {{ person }}</p>
+
+            </li>
+        </ul>
+        <h1>Lấy ra index của mảng</h1>
+        <ul>
+            <!--cú pháp cần thuộc lấy ra index, (giá trị, index) -->
+            <li v-for="(ingredient,i) in ingredients">Giá trị: {{ ingredient }} - Index: {{i}}</li>
+        </ul>
+
+        <div>
+            <h1>Sử dụng template để chứa các giá trị sau khi chạy For bên trong rồi hiển thị lên sau, một cách khác thay
+                vì dùng ul và li</h1>
+
+            <template v-for="(ingredient,index) in ingredients">
+                <h1>{{ingredient}}</h1>
+                <h1>{{index}}</h1>
+
+            </template>
+
+        </div>
+
+        <div>
+            <h1>Hiển thị 1 mảng ngẫu nhiên từ 1 -> 10</h1>
+            <p v-for="n in 10">{{n}}</p>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+<script src="js/chapter3-vue.js"></script>
+</html>
