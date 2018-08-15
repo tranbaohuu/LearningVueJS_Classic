@@ -1,0 +1,38 @@
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+
+
+<div id="app1">
+    <h1 ref="heading" ref="heading">{{ title }}</h1>
+    <!--Dùng ref để tạo ra kết nối selector để có thể thay đổi, điều chỉnh dưới code app.js-->
+    <button v-on:click="show" ref="myButton">Show Paragraph</button>
+    <p v-if="showParagraph">This is not always visible</p>
+    <!--<hello></hello>-->
+    <!--<hello></hello>-->
+
+</div>
+
+
+<div id="app2">
+    <h1 ref="heading">{{ title }}</h1>
+    <button @click="onChange">Change something on Vue 1</button>
+
+</div>
+
+
+<div id="app3">
+    <hello></hello>
+    <hello></hello>
+    <hello></hello>
+
+</div>
+
+
+<!--Gọi từ Vue Component-->
+
+
+<div id="components-demo">
+    <button-counter></button-counter>
+</div>
+
+
+<script src="app.js"></script>

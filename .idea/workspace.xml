@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0989da1b-0775-4b98-895d-cc7d43c02eb8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_5/Section Code (Start)/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Chapter_5/Section Code (Start)/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,44 +16,44 @@
     <session id="-2097212229">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="5" />
-          <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="13" />
+          <entry key="project.open.time.8" value="6" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="180" value="1" />
           <entry key="css" value="2" />
-          <entry key="html" value="5" />
-          <entry key="js" value="10" />
+          <entry key="html" value="7" />
+          <entry key="js" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="5" />
-          <entry key="JavaScript" value="11" />
+          <entry key="HTML" value="7" />
+          <entry key="JavaScript" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="95" />
-          <entry key="html" value="4379" />
-          <entry key="js" value="2680" />
+          <entry key="html" value="4709" />
+          <entry key="js" value="4329" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="95" />
-          <entry key="HTML" value="4379" />
-          <entry key="JavaScript" value="2680" />
+          <entry key="HTML" value="4709" />
+          <entry key="JavaScript" value="4329" />
         </counts>
       </usages-collector>
     </session>
@@ -61,22 +61,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/index.html">
+        <entry file="file://$PROJECT_DIR$/Chapter_5/Section Code (Start)/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="510">
+              <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/app.js">
+        <entry file="file://$PROJECT_DIR$/Chapter_5/Section Code (Start)/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="562">
+              <caret line="85" column="87" selection-start-line="85" selection-start-column="87" selection-end-line="85" selection-end-column="87" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -109,6 +109,8 @@
       <find>:class</find>
       <find>damage</find>
       <find>wid</find>
+      <find>he</find>
+      <find>hello</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -124,6 +126,8 @@
         <option value="$PROJECT_DIR$/chapter3.html" />
         <option value="$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/index.html" />
         <option value="$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/app.js" />
+        <option value="$PROJECT_DIR$/Chapter_5/Section Code (Start)/index.html" />
+        <option value="$PROJECT_DIR$/Chapter_5/Section Code (Start)/app.js" />
       </list>
     </option>
   </component>
@@ -134,10 +138,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -155,20 +158,13 @@
             <path>
               <item name="LearningVueJS_Classic" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearningVueJS_Classic" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter_4" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter_5" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="LearningVueJS_Classic" type="b2602c69:ProjectViewProjectNode" />
               <item name="LearningVueJS_Classic" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter_4" type="462c0819:PsiDirectoryNode" />
-              <item name="46 Demo Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="LearningVueJS_Classic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="LearningVueJS_Classic" type="462c0819:PsiDirectoryNode" />
-              <item name="Chapter_4" type="462c0819:PsiDirectoryNode" />
-              <item name="46 Demo Game" type="462c0819:PsiDirectoryNode" />
-              <item name="Setup" type="462c0819:PsiDirectoryNode" />
+              <item name="Chapter_5" type="462c0819:PsiDirectoryNode" />
+              <item name="Section Code (Start)" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -187,6 +183,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\tranb\PhpstormProjects\LearningVueJS_Classic\Chapter_5" />
       <recent name="C:\Users\tranb\PhpstormProjects\LearningVueJS_Classic\Chapter_4\46 Demo Game" />
       <recent name="C:\Users\tranb\PhpstormProjects\LearningVueJS_Classic\js" />
     </key>
@@ -231,17 +228,19 @@
       <workItem from="1534086661725" duration="5411000" />
       <workItem from="1534174573447" duration="42000" />
       <workItem from="1534254957881" duration="7834000" />
+      <workItem from="1534352205353" duration="34000" />
+      <workItem from="1534352308999" duration="4992000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24830000" />
+    <option name="totallyTimeSpent" value="29856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2835821" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2835821" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -255,7 +254,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" visible="true" weight="0.09869848" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -295,7 +294,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/js/my-vue.js</url>
           <line>31</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
@@ -342,9 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="1825" column="54" lean-forward="true" selection-start-line="1825" selection-start-column="54" selection-end-line="1825" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -353,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="68" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+        <state relative-caret-position="68">
+          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="62" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -363,8 +358,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Chapter_4/46 Demo Game/Setup/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="17">
+          <caret line="1" column="13" lean-forward="true" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_5/Section Code (Start)/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter_5/Section Code (Start)/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="562">
+          <caret line="85" column="87" selection-start-line="85" selection-start-column="87" selection-end-line="85" selection-end-column="87" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
